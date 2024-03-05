@@ -4,14 +4,14 @@ import { registerLocaleData } from '@angular/common';
 import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
 import { HeaderComponent } from './header/header.component';
 import * as fr from '@angular/common/locales/fr';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, FaceSnapListComponent, HeaderComponent],
+  imports: [RouterOutlet,RouterLink,RouterLinkActive, CommonModule, FaceSnapListComponent, HeaderComponent],
 
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
